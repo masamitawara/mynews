@@ -23,7 +23,7 @@ Route::get('admin/profile/create','Admin\ProfileController@add')->middleware('au
 
 Route::get('admin/profile/edit','Admin\ProfileController@edit')->middleware('auth');
 
-Route::get('admin/profile/profile','Admin\ProfileController@edit')->middleware('auth');
+Route::get('admin/profile/profile','Admin\ProfileController@edit');
 
 
 
