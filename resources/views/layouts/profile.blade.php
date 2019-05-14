@@ -45,7 +45,8 @@
                         </ul>
 
                         <!-- Right Side Of Navbar -->
-                        
+                         <ul class="navbar-nav ml-auto">
+                         
                          <!-- Authentication Links -->
                         {{-- ログインしていなかったらログイン画面へのリンクを表示 --}}
                         @guest
@@ -71,7 +72,6 @@
                             </li>
                             @endguest 
                         
-                        <ul class="navbar-nav ml-auto">
                         </ul>
                     </div>
                 </div>
