@@ -45,9 +45,9 @@
                         </ul>
 
                         <!-- Right Side Of Navbar -->
-                        <ul class="navbar-nav ml-auto">
-                         
-                           <!-- Authentication Links -->
+                         <ul class="navbar-nav ml-auto">
+                        
+                         <!-- Authentication Links -->
                         {{-- ログインしていなかったらログイン画面へのリンクを表示 --}}
                         @guest
                             <li><a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a></li>
@@ -70,9 +70,9 @@
                                     </form>
                                 </div>
                             </li>
-                            @endguest 
-                            
-                            
+                            @endguest
+                         
+                    
                         </ul>
                     </div>
                 </div>
