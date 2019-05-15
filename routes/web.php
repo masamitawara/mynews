@@ -21,15 +21,11 @@ Route::group(['prefix' => 'admin'], function() {
 });
 
 
-Route::get('admin/profile/create','Admin\ProfileController@add');
+Route::get('admin/profile/create','Admin\ProfileController@add')->middleware('auth');
 
-<<<<<<< HEAD
 Route::get('admin/profile/edit','Admin\ProfileController@edit')->middleware('auth');
 
-Route::get('admin/profile/profile','Admin\ProfileController@edit');
-=======
 Route::get('admin/profile/profile','Admin\ProfileController@edit')->middleware('auth');
->>>>>>> 209eb152b2e076d256981ecac8ccbecc3328b3ec
 
 
 Auth::routes();
